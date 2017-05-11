@@ -65,7 +65,11 @@ class KnownValues(unittest.TestCase):
         result = centurySign.centurySign(8, 42)
         # Check for expected output
         self.assertEqual('Day Error', result)
-
+    def test_centurySignForMonthAndDayErrorHighValue(self):
+        # Capture the results of the function
+        result = centurySign.centurySign(20, 100)
+        # Check for expected output
+        self.assertEqual('Month Error', result)
 # Run the tests
 if __name__ == '__main__':
     unittest.main()
