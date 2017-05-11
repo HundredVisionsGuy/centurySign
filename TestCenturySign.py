@@ -70,6 +70,7 @@ class KnownValues(unittest.TestCase):
         result = centurySign.centurySign(20, 100)
         # Check for expected output
         self.assertEqual('Month Error', result)
+        
 # Run the tests
 if __name__ == '__main__':
     unittest.main()
